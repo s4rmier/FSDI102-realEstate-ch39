@@ -1,4 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Golos+Text:wght@400;500;600;700;800;900&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+  --font-primary: "Manrope";
+  --pri-col: #f0f7ee;
+  --sec-col: #6d8a96;
+  --util-col: #2d3142;
+  --link-col: #003554;
+  --hl-col: #ff7f11;
+}
+* a {
+  color: black;
+  text-decoration: none;
+}
+* p {
+  line-height: 2;
+  font-family: "Merriweather";
+}
+
+body .flex {
+  display: flex;
+}
+body .row {
+  flex-direction: row;
+}
+body .col {
+  flex-direction: column;
+}
+body .align {
+  align-items: center;
+}
+body .justify {
+  justify-content: center;
+}
+body .container {
+  width: 85%;
+}
+
+header {
+  padding: 3rem;
+  background: url(img/header.jpg) no-repeat fixed bottom;
+  justify-content: space-between;
+}
+header div i {
+  font-size: 3rem;
+  margin: 10px;
+}
+header div h1,
+header div p,
+header div i {
+  color: var(--pri-col);
+}
+header nav ul li {
+  color: #f0f7ee;
+  margin: 0px 0.5rem;
 }/*# sourceMappingURL=style.css.map */
