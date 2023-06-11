@@ -75,7 +75,7 @@ body {
   }
 
   .glassbg {
-    background-color: rgba($color: #6d8a96, $alpha: 0.75);
+    background-color: rgba($color: #6d8a96, $alpha: 0.25);
     backdrop-filter: blur(10px);
     filter: drop-shadow(2px 2px 2px black);
   }
@@ -96,7 +96,7 @@ nav {
     justify-content: space-between;
     div {
       img {
-        width: 40px;
+        width: 30px;
         margin-right: 20px;
       }
       h2 {
@@ -143,13 +143,13 @@ header {
 div.backtotopbutton {
   position: fixed;
   bottom: 3rem;
-  right: 2rem;
+  right: 1rem;
   i {
     font-size: 2rem;
   }
 }
 
-#bhome {
+#bindex {
   header {
     background: url(img/header.jpg) no-repeat center / cover;
   }
@@ -163,6 +163,7 @@ div.backtotopbutton {
     );
     padding: 10px;
     h2 {
+      font-family: var(--font-golos);
       text-align: center;
       padding: 20px 0px 0px;
       font-size: 2rem;
@@ -175,10 +176,35 @@ div.backtotopbutton {
       }
       figcaption {
         h3 {
-          font-style: italic;
+          font-family: var(--font-golos);
         }
         p {
           font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  main {
+    section.featured {
+      padding: 20px;
+      h2 {
+        font-size: 2rem;
+        font-family: var(--font-golos);
+        text-align: center;
+      }
+      figure {
+        margin: 20px 0px;
+        figcaption {
+          background-color: var(--pri-col);
+          padding: 30px;
+          div {
+            justify-content: space-between;
+            h3 {
+              font-size: 0.85rem;
+              font-family: var(--font-manrope);
+            }
+          }
         }
       }
     }
@@ -204,17 +230,24 @@ div.backtotopbutton {
   }
 
   section.strip {
-    // background: rgb(255, 210, 146);
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(255, 210, 146, 1) 0%,
-    //   rgba(254, 255, 80, 1) 100%
-    // );
     div.container {
       flex-direction: column;
       figure {
         i {
           margin-right: 1.75rem;
+        }
+      }
+    }
+  }
+
+  main {
+    section.featured {
+      figure {
+        flex-direction: column;
+        img {
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -248,6 +281,16 @@ div.backtotopbutton {
       flex-direction: column;
       i {
         margin-bottom: 40px;
+      }
+    }
+  }
+
+  section.featured {
+    width: 100%;
+    figure {
+      flex-direction: row;
+      img {
+        width: 50%;
       }
     }
   }

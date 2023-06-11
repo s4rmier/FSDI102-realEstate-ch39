@@ -57,7 +57,7 @@ body .container {
   margin: 0 auto;
 }
 body .glassbg {
-  background-color: rgba(109, 138, 150, 0.75);
+  background-color: rgba(109, 138, 150, 0.25);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   filter: drop-shadow(2px 2px 2px black);
@@ -76,7 +76,7 @@ nav div.container {
   justify-content: space-between;
 }
 nav div.container div img {
-  width: 40px;
+  width: 30px;
   margin-right: 20px;
 }
 nav div.container div h2 {
@@ -119,37 +119,60 @@ header div i {
 div.backtotopbutton {
   position: fixed;
   bottom: 3rem;
-  right: 2rem;
+  right: 1rem;
 }
 div.backtotopbutton i {
   font-size: 2rem;
 }
 
-#bhome header {
+#bindex header {
   background: url(img/header.jpg) no-repeat center/cover;
 }
-#bhome section.strip {
+#bindex section.strip {
   background: rgb(230, 244, 255);
   background: linear-gradient(90deg, rgb(230, 244, 255) 0%, rgb(254, 255, 178) 100%);
   padding: 10px;
 }
-#bhome section.strip h2 {
+#bindex section.strip h2 {
+  font-family: var(--font-golos);
   text-align: center;
   padding: 20px 0px 0px;
   font-size: 2rem;
 }
-#bhome section.strip figure {
+#bindex section.strip figure {
   padding: 2rem;
 }
-#bhome section.strip figure i {
+#bindex section.strip figure i {
   color: var(--util-col);
   font-size: 4rem;
 }
-#bhome section.strip figure figcaption h3 {
-  font-style: italic;
+#bindex section.strip figure figcaption h3 {
+  font-family: var(--font-golos);
 }
-#bhome section.strip figure figcaption p {
+#bindex section.strip figure figcaption p {
   font-size: 1rem;
+}
+#bindex main section.featured {
+  padding: 20px;
+}
+#bindex main section.featured h2 {
+  font-size: 2rem;
+  font-family: var(--font-golos);
+  text-align: center;
+}
+#bindex main section.featured figure {
+  margin: 20px 0px;
+}
+#bindex main section.featured figure figcaption {
+  background-color: var(--pri-col);
+  padding: 30px;
+}
+#bindex main section.featured figure figcaption div {
+  justify-content: space-between;
+}
+#bindex main section.featured figure figcaption div h3 {
+  font-size: 0.85rem;
+  font-family: var(--font-manrope);
 }
 
 @media screen and (max-width: 719px) {
@@ -168,6 +191,15 @@ div.backtotopbutton i {
   }
   section.strip div.container figure i {
     margin-right: 1.75rem;
+  }
+  main section.featured figure {
+    flex-direction: column;
+  }
+  main section.featured figure img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (min-width: 720px) {
@@ -191,5 +223,14 @@ div.backtotopbutton i {
   }
   section.strip figure i {
     margin-bottom: 40px;
+  }
+  section.featured {
+    width: 100%;
+  }
+  section.featured figure {
+    flex-direction: row;
+  }
+  section.featured figure img {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
