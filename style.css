@@ -41,12 +41,13 @@ body .container {
 
 header {
   padding: 3rem;
-  background: url(img/header.jpg) no-repeat fixed bottom;
+  min-height: 12vh;
+  background: url(img/header.jpg) no-repeat center;
   justify-content: space-between;
 }
 header div i {
-  font-size: 3rem;
-  margin: 10px;
+  font-size: 3.25rem;
+  margin: 12px;
 }
 header div h1,
 header div p,

@@ -58,12 +58,13 @@ body {
 // header
 header {
   padding: 3rem;
-  background: url(img/header.jpg) no-repeat fixed bottom;
+  min-height: 12vh;
+  background: url(img/header.jpg) no-repeat center;
   justify-content: space-between;
   div {
     i {
-      font-size: 3rem;
-      margin: 10px;
+      font-size: 3.25rem;
+      margin: 12px;
     }
     h1,
     p,
@@ -80,9 +81,6 @@ header {
       }
     }
   }
-}
-
-main {
 }
 
 // Mobile
