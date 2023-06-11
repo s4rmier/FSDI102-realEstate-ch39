@@ -163,14 +163,14 @@ div.backtotopbutton i {
   font-family: var(--font-golos);
   text-align: center;
 }
-#bindex main section.featured div.details {
+#bindex main section.featured div.listing-item div.details {
   margin-top: 20px;
   height: 400px;
   width: 100%;
   position: relative;
   isolation: isolate;
 }
-#bindex main section.featured div.details img {
+#bindex main section.featured div.listing-item div.details img {
   z-index: -10;
   position: absolute;
   height: 100%;
@@ -178,21 +178,21 @@ div.backtotopbutton i {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#bindex main section.featured div.details ul {
+#bindex main section.featured div.listing-item div.details ul {
   height: 20%;
   width: 100%;
   padding: 120px 40px 0px;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgba(254, 255, 178, 0) 100%);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0.2469362745) 100%);
   z-index: 3;
   align-self: flex-end;
 }
-#bindex main section.featured div.details ul h3,
-#bindex main section.featured div.details ul li {
+#bindex main section.featured div.listing-item div.details ul h3,
+#bindex main section.featured div.listing-item div.details ul li {
   font-family: var(--font-golos);
   color: #f0f7ee;
 }
-#bindex main section.featured div.details ul h3 {
+#bindex main section.featured div.listing-item div.details ul h3 {
   font-size: 2rem;
 }
 
@@ -235,9 +235,5 @@ div.backtotopbutton i {
   }
   section.strip figure i {
     margin-bottom: 40px;
-  }
-  main section.featured div.details img {
-    -o-object-position: center;
-       object-position: center;
   }
 }/*# sourceMappingURL=style.css.map */
