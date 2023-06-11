@@ -118,7 +118,7 @@ header div i {
 
 div.backtotopbutton {
   position: fixed;
-  bottom: 3rem;
+  bottom: 2rem;
   right: 1rem;
 }
 div.backtotopbutton i {
@@ -152,6 +152,9 @@ div.backtotopbutton i {
 #bindex section.strip figure figcaption p {
   font-size: 1rem;
 }
+#bindex section.strip figure div.details ul li {
+  font-family: var(--font-manrope);
+}
 #bindex main section.featured {
   padding: 20px 0px;
 }
@@ -160,23 +163,37 @@ div.backtotopbutton i {
   font-family: var(--font-golos);
   text-align: center;
 }
-#bindex main section.featured figure {
+#bindex main section.featured div.details {
+  margin-top: 20px;
+  height: 400px;
   width: 100%;
-  padding: 20px 0px;
+  position: relative;
+  isolation: isolate;
 }
-#bindex main section.featured figure img {
+#bindex main section.featured div.details img {
+  z-index: -10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#bindex main section.featured figure figcaption {
-  background-color: var(--pri-col);
-  padding: 30px;
+#bindex main section.featured div.details ul {
+  height: 20%;
+  width: 100%;
+  padding: 120px 40px 0px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgba(254, 255, 178, 0) 100%);
+  z-index: 3;
+  align-self: flex-end;
 }
-#bindex main section.featured figure figcaption div {
-  justify-content: space-between;
+#bindex main section.featured div.details ul h3,
+#bindex main section.featured div.details ul li {
+  font-family: var(--font-golos);
+  color: #f0f7ee;
 }
-#bindex main section.featured figure figcaption div h3 {
-  font-family: var(--font-manrope);
+#bindex main section.featured div.details ul h3 {
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 719px) {
@@ -195,16 +212,6 @@ div.backtotopbutton i {
   }
   section.strip div.container figure i {
     margin-right: 1.75rem;
-  }
-  main section.featured figure {
-    flex-direction: column;
-  }
-  main section.featured figure img {
-    height: 300px;
-    width: 100%;
-  }
-  main section.featured figure figcaption div h3 {
-    font-size: 0.85rem;
   }
 }
 @media screen and (min-width: 720px) {
@@ -229,18 +236,8 @@ div.backtotopbutton i {
   section.strip figure i {
     margin-bottom: 40px;
   }
-  section.featured figure {
-    width: 100%;
-    flex-direction: row;
-  }
-  section.featured figure img {
-    height: 300px;
-    width: 50%;
-  }
-  section.featured figure figcaption {
-    width: 50%;
-  }
-  section.featured figure figcaption div h3 {
-    font-size: 1.25rem;
+  main section.featured div.details img {
+    -o-object-position: center;
+       object-position: center;
   }
 }/*# sourceMappingURL=style.css.map */
