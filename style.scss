@@ -36,6 +36,14 @@
     line-height: 1.5;
     font-family: "Merriweather";
   }
+
+  p,
+  h2,
+  h3,
+  h4,
+  li {
+    color: var(--util-col);
+  }
 }
 
 // utilities
@@ -66,7 +74,7 @@ body {
   }
 
   .glassbg {
-    background-color: rgba($color: #6d8a96, $alpha: 0.25);
+    background-color: rgba($color: #6d8a96, $alpha: 0.15);
     backdrop-filter: blur(10px);
     filter: drop-shadow(2px 2px 2px black);
   }
@@ -137,7 +145,20 @@ header {
   }
 
   section.strip {
-    background-color: var(--sec-col);
+    padding: 10px;
+    background-color: rgba($color: #fecb54, $alpha: 0.75);
+    h2 {
+      text-align: center;
+      padding: 20px 0px 0px;
+      font-size: 2rem;
+    }
+    figure {
+      padding: 2rem;
+      i {
+        color: var(--util-col);
+        font-size: 3.5rem;
+      }
+    }
   }
 }
 
@@ -155,6 +176,17 @@ header {
       i {
         color: var(--hl-col);
         font-size: 1.75rem;
+      }
+    }
+  }
+
+  section.strip {
+    div.container {
+      flex-direction: column;
+      figure {
+        i {
+          margin-right: 1.75rem;
+        }
       }
     }
   }
@@ -178,6 +210,15 @@ header {
       }
       i {
         display: none;
+      }
+    }
+  }
+
+  section.strip {
+    figure {
+      flex-direction: column;
+      i {
+        margin-bottom: 40px;
       }
     }
   }
