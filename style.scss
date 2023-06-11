@@ -75,7 +75,7 @@ body {
   }
 
   .glassbg {
-    background-color: rgba($color: #6d8a96, $alpha: 0.15);
+    background-color: rgba($color: #6d8a96, $alpha: 0.75);
     backdrop-filter: blur(10px);
     filter: drop-shadow(2px 2px 2px black);
   }
@@ -155,8 +155,13 @@ div.backtotopbutton {
   }
 
   section.strip {
+    background: rgb(230, 244, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(230, 244, 255, 1) 0%,
+      rgba(254, 255, 178, 1) 100%
+    );
     padding: 10px;
-    background-color: rgba($color: #fecb54, $alpha: 0.85);
     h2 {
       text-align: center;
       padding: 20px 0px 0px;
@@ -199,6 +204,12 @@ div.backtotopbutton {
   }
 
   section.strip {
+    // background: rgb(255, 210, 146);
+    // background: radial-gradient(
+    //   circle,
+    //   rgba(255, 210, 146, 1) 0%,
+    //   rgba(254, 255, 80, 1) 100%
+    // );
     div.container {
       flex-direction: column;
       figure {

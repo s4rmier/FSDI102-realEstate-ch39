@@ -57,7 +57,7 @@ body .container {
   margin: 0 auto;
 }
 body .glassbg {
-  background-color: rgba(109, 138, 150, 0.15);
+  background-color: rgba(109, 138, 150, 0.75);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   filter: drop-shadow(2px 2px 2px black);
@@ -129,8 +129,9 @@ div.backtotopbutton i {
   background: url(img/header.jpg) no-repeat center/cover;
 }
 #bhome section.strip {
+  background: rgb(230, 244, 255);
+  background: linear-gradient(90deg, rgb(230, 244, 255) 0%, rgb(254, 255, 178) 100%);
   padding: 10px;
-  background-color: rgba(254, 203, 84, 0.85);
 }
 #bhome section.strip h2 {
   text-align: center;
