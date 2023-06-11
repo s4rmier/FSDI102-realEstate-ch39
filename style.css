@@ -9,14 +9,14 @@
   --sec-col: #6d8a96;
   --util-col: #2d3142;
   --link-col: #003554;
-  --hl-col: #ff7f11;
+  --hl-col: #e4c06d;
 }
 * a {
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 * p {
-  line-height: 2;
+  line-height: 1.5;
   font-family: "Merriweather";
 }
 
@@ -37,24 +37,4 @@ body .justify {
 }
 body .container {
   width: 85%;
-}
-
-header {
-  padding: 3rem;
-  min-height: 12vh;
-  background: url(img/header.jpg) no-repeat center;
-  justify-content: space-between;
-}
-header div i {
-  font-size: 3.25rem;
-  margin: 12px;
-}
-header div h1,
-header div p,
-header div i {
-  color: var(--pri-col);
-}
-header nav ul li {
-  color: #f0f7ee;
-  margin: 0px 0.5rem;
 }/*# sourceMappingURL=style.css.map */
