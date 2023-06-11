@@ -173,7 +173,7 @@ div.backtotopbutton {
 }
 
 // Mobile
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 719px) {
   #bhome header {
     background-size: auto;
   }
@@ -203,7 +203,7 @@ div.backtotopbutton {
 }
 
 // Desktop
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 720px) {
   nav {
     div.container {
       ul.desktop {
