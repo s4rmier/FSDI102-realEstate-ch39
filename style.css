@@ -130,7 +130,7 @@ div.backtotopbutton i {
 }
 #bhome section.strip {
   padding: 10px;
-  background-color: rgba(254, 203, 84, 0.5);
+  background-color: rgba(254, 203, 84, 0.85);
 }
 #bhome section.strip h2 {
   text-align: center;
@@ -142,7 +142,13 @@ div.backtotopbutton i {
 }
 #bhome section.strip figure i {
   color: var(--util-col);
-  font-size: 3.5rem;
+  font-size: 4rem;
+}
+#bhome section.strip figure figcaption h3 {
+  font-style: italic;
+}
+#bhome section.strip figure figcaption p {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 719px) {
