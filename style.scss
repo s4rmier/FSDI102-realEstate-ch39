@@ -9,14 +9,23 @@
   font-family: var(--font-primary);
 
   // font style
-  --font-primary: "Manrope";
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-golos: "Golos Text", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-lora: "Lora", serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-robotoslab: "Roboto Slab", serif;
 
   // color pallette
   --pri-col: #f0f7ee;
   --sec-col: #6d8a96;
   --util-col: #2d3142;
   --link-col: #003554;
-  --hl-col: #e4c06d;
+  --hl-col: #fecb54;
 
   a {
     color: inherit;
@@ -53,5 +62,123 @@ body {
 
   .container {
     width: 85%;
+    margin: 0 auto;
+  }
+
+  .glassbg {
+    background-color: rgba($color: #6d8a96, $alpha: 0.25);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(2px 2px 2px black);
+  }
+}
+
+// Universal styling
+
+nav {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+
+  div.container {
+    justify-content: space-between;
+    div {
+      img {
+        width: 40px;
+        margin-right: 20px;
+      }
+      h2 {
+        color: var(--hl-col);
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-family: var(--font-josefin);
+        letter-spacing: 0.15rem;
+      }
+    }
+  }
+}
+
+header {
+  min-height: 60vh;
+  width: 100%;
+
+  h2 {
+    color: var(--pri-col);
+    font-style: italic;
+    text-align: center;
+    font-size: 2rem;
+    span {
+      color: var(--hl-col);
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+  div {
+    margin: 40px 0px;
+    hr {
+      width: 140px;
+      margin: 0px 10px;
+      height: 1px;
+      background-color: var(--hl-col);
+    }
+    i {
+      margin: 0px 5px;
+      color: var(--hl-col);
+    }
+  }
+}
+
+#bhome {
+  header {
+    background: url(img/header.jpg) no-repeat center / cover;
+  }
+
+  section.strip {
+    background-color: var(--sec-col);
+  }
+}
+
+// Mobile
+@media screen and (max-width: 600px) {
+  #bhome header {
+    background-size: auto;
+  }
+
+  nav {
+    div.container {
+      ul.desktop {
+        display: none;
+      }
+      i {
+        color: var(--hl-col);
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 601px) {
+  nav {
+    div.container {
+      ul.desktop {
+        display: flex;
+        li {
+          color: var(--hl-col);
+          font-weight: 500;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+          font-family: var(--font-roboto);
+          font-size: 1rem;
+          margin: 0px 10px;
+        }
+      }
+      i {
+        display: none;
+      }
+    }
   }
 }

@@ -4,12 +4,21 @@
   padding: 0;
   margin: 0;
   font-family: var(--font-primary);
-  --font-primary: "Manrope";
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-golos: "Golos Text", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-lora: "Lora", serif;
+  --font-manrope: "Manrope", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-robotoslab: "Roboto Slab", serif;
   --pri-col: #f0f7ee;
   --sec-col: #6d8a96;
   --util-col: #2d3142;
   --link-col: #003554;
-  --hl-col: #e4c06d;
+  --hl-col: #fecb54;
 }
 * a {
   color: inherit;
@@ -37,4 +46,101 @@ body .justify {
 }
 body .container {
   width: 85%;
+  margin: 0 auto;
+}
+body .glassbg {
+  background-color: rgba(109, 138, 150, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+nav {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+}
+nav div.container {
+  justify-content: space-between;
+}
+nav div.container div img {
+  width: 40px;
+  margin-right: 20px;
+}
+nav div.container div h2 {
+  color: var(--hl-col);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-family: var(--font-josefin);
+  letter-spacing: 0.15rem;
+}
+
+header {
+  min-height: 60vh;
+  width: 100%;
+}
+header h2 {
+  color: var(--pri-col);
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+}
+header h2 span {
+  color: var(--hl-col);
+  font-size: 3rem;
+  line-height: 1;
+}
+header div {
+  margin: 40px 0px;
+}
+header div hr {
+  width: 140px;
+  margin: 0px 10px;
+  height: 1px;
+  background-color: var(--hl-col);
+}
+header div i {
+  margin: 0px 5px;
+  color: var(--hl-col);
+}
+
+#bhome header {
+  background: url(img/header.jpg) no-repeat center/cover;
+}
+#bhome section.strip {
+  background-color: var(--sec-col);
+}
+
+@media screen and (max-width: 600px) {
+  #bhome header {
+    background-size: auto;
+  }
+  nav div.container ul.desktop {
+    display: none;
+  }
+  nav div.container i {
+    color: var(--hl-col);
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  nav div.container ul.desktop {
+    display: flex;
+  }
+  nav div.container ul.desktop li {
+    color: var(--hl-col);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    margin: 0px 10px;
+  }
+  nav div.container i {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
