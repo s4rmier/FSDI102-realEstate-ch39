@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   font-family: var(--font-primary);
+  scroll-behavior: smooth;
 
   // font style
   --font-barlow: "Barlow Condensed", sans-serif;
@@ -139,6 +140,15 @@ header {
   }
 }
 
+div.backtotopbutton {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  i {
+    font-size: 2rem;
+  }
+}
+
 #bhome {
   header {
     background: url(img/header.jpg) no-repeat center / cover;
@@ -146,7 +156,7 @@ header {
 
   section.strip {
     padding: 10px;
-    background-color: rgba($color: #fecb54, $alpha: 0.75);
+    background-color: rgba($color: #fecb54, $alpha: 0.5);
     h2 {
       text-align: center;
       padding: 20px 0px 0px;
