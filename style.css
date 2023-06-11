@@ -153,7 +153,7 @@ div.backtotopbutton i {
   font-size: 1rem;
 }
 #bindex main section.featured {
-  padding: 20px;
+  padding: 20px 0px;
 }
 #bindex main section.featured h2 {
   font-size: 2rem;
@@ -161,7 +161,12 @@ div.backtotopbutton i {
   text-align: center;
 }
 #bindex main section.featured figure {
-  margin: 20px 0px;
+  width: 100%;
+  padding: 20px 0px;
+}
+#bindex main section.featured figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #bindex main section.featured figure figcaption {
   background-color: var(--pri-col);
@@ -171,7 +176,6 @@ div.backtotopbutton i {
   justify-content: space-between;
 }
 #bindex main section.featured figure figcaption div h3 {
-  font-size: 0.85rem;
   font-family: var(--font-manrope);
 }
 
@@ -198,8 +202,9 @@ div.backtotopbutton i {
   main section.featured figure img {
     height: 300px;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  }
+  main section.featured figure figcaption div h3 {
+    font-size: 0.85rem;
   }
 }
 @media screen and (min-width: 720px) {
@@ -224,13 +229,18 @@ div.backtotopbutton i {
   section.strip figure i {
     margin-bottom: 40px;
   }
-  section.featured {
-    width: 100%;
-  }
   section.featured figure {
+    width: 100%;
     flex-direction: row;
   }
   section.featured figure img {
+    height: 300px;
     width: 50%;
+  }
+  section.featured figure figcaption {
+    width: 50%;
+  }
+  section.featured figure figcaption div h3 {
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=style.css.map */
