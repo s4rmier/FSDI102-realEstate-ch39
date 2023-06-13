@@ -96,6 +96,10 @@ body {
   button:hover {
     filter: drop-shadow(2px 2px 0px var(--hl-col));
   }
+
+  .lightbg {
+    background-color: rgba($color: #f0f7ee, $alpha: 0.75);
+  }
 }
 
 // Universal styling / styles both desktop and mobile
@@ -220,7 +224,6 @@ div.backtotopbutton {
         div.listing-title {
           position: relative;
           isolation: isolate;
-
           img {
             z-index: -10;
             position: absolute;
@@ -315,9 +318,9 @@ div.backtotopbutton {
   main {
     section.featured {
       div.listing-item {
+        margin-top: 20px;
         flex-direction: column;
         div.listing-title {
-          margin-top: 20px;
           height: 400px;
           width: 100%;
           ul {
@@ -329,7 +332,6 @@ div.backtotopbutton {
         }
 
         div.listing-detail {
-          background-color: #f0f7ee;
           padding: 30px;
           h3 {
             margin-bottom: 10px;
@@ -343,13 +345,11 @@ div.backtotopbutton {
       }
 
       div.listing-card {
-        margin: 20px 0px;
+        margin: 20px 0px 0px;
         width: 100%;
         flex-direction: column;
         figure {
-          margin: 20px 0px;
-          min-height: 20px;
-          background-color: #f0f7ee;
+          margin: 0px 0px 20px;
           img {
             width: 50%;
             object-fit: cover;
@@ -409,7 +409,7 @@ div.backtotopbutton {
   }
 
   #bindex header {
-    min-height: 80vh;
+    min-height: 60vh;
     background-size: auto;
     h2 {
       margin-top: 60px;
@@ -429,9 +429,8 @@ div.backtotopbutton {
     section.featured {
       div.listing-item {
         flex-direction: row;
+        margin-top: 20px;
         div.listing-title {
-          margin-top: 20px;
-          // height: 400px;
           width: 60%;
           ul {
             li {
@@ -442,7 +441,6 @@ div.backtotopbutton {
         }
 
         div.listing-detail {
-          background-color: #f0f7ee;
           margin-top: 20px;
           width: 40%;
           padding: 40px;
@@ -453,6 +451,51 @@ div.backtotopbutton {
             ul {
               width: 50%;
             }
+          }
+        }
+      }
+
+      div.listing-card {
+        margin: 20px 0px;
+        width: 100%;
+        flex-direction: row;
+
+        figure:nth-child(2) {
+          margin: 0px 20px;
+        }
+
+        figure {
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+        figcaption {
+          width: 80%;
+          padding: 30px;
+          font-family: var(--font-golos);
+          line-height: 1.5;
+          li.sublist-item {
+            font-size: 0.75rem;
+            opacity: 0.85;
+          }
+
+          div {
+            justify-content: space-around;
+            margin: 20px 0px;
+            ul {
+              li {
+                i {
+                  width: 20px;
+                }
+              }
+            }
+          }
+          button.button {
+            align-self: flex-end;
+            justify-self: flex-end;
           }
         }
       }

@@ -77,6 +77,9 @@ body button.button {
 body button:hover {
   filter: drop-shadow(2px 2px 0px var(--hl-col));
 }
+body .lightbg {
+  background-color: rgba(240, 247, 238, 0.75);
+}
 
 nav {
   padding: 1rem;
@@ -244,10 +247,10 @@ div.backtotopbutton i {
     margin-right: 1.75rem;
   }
   main section.featured div.listing-item {
+    margin-top: 20px;
     flex-direction: column;
   }
   main section.featured div.listing-item div.listing-title {
-    margin-top: 20px;
     height: 400px;
     width: 100%;
   }
@@ -256,7 +259,6 @@ div.backtotopbutton i {
     font-size: 1rem;
   }
   main section.featured div.listing-item div.listing-detail {
-    background-color: #f0f7ee;
     padding: 30px;
   }
   main section.featured div.listing-item div.listing-detail h3 {
@@ -266,14 +268,12 @@ div.backtotopbutton i {
     width: 50%;
   }
   main section.featured div.listing-card {
-    margin: 20px 0px;
+    margin: 20px 0px 0px;
     width: 100%;
     flex-direction: column;
   }
   main section.featured div.listing-card figure {
-    margin: 20px 0px;
-    min-height: 20px;
-    background-color: #f0f7ee;
+    margin: 0px 0px 20px;
   }
   main section.featured div.listing-card figure img {
     width: 50%;
@@ -319,7 +319,7 @@ div.backtotopbutton i {
     display: none;
   }
   #bindex header {
-    min-height: 80vh;
+    min-height: 60vh;
     background-size: auto;
   }
   #bindex header h2 {
@@ -333,9 +333,9 @@ div.backtotopbutton i {
   }
   main section.featured div.listing-item {
     flex-direction: row;
+    margin-top: 20px;
   }
   main section.featured div.listing-item div.listing-title {
-    margin-top: 20px;
     width: 60%;
   }
   main section.featured div.listing-item div.listing-title ul li {
@@ -343,7 +343,6 @@ div.backtotopbutton i {
     font-size: 1rem;
   }
   main section.featured div.listing-item div.listing-detail {
-    background-color: #f0f7ee;
     margin-top: 20px;
     width: 40%;
     padding: 40px;
@@ -353,5 +352,43 @@ div.backtotopbutton i {
   }
   main section.featured div.listing-item div.listing-detail div ul {
     width: 50%;
+  }
+  main section.featured div.listing-card {
+    margin: 20px 0px;
+    width: 100%;
+    flex-direction: row;
+  }
+  main section.featured div.listing-card figure:nth-child(2) {
+    margin: 0px 20px;
+  }
+  main section.featured div.listing-card figure {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main section.featured div.listing-card img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main section.featured div.listing-card figcaption {
+    width: 80%;
+    padding: 30px;
+    font-family: var(--font-golos);
+    line-height: 1.5;
+  }
+  main section.featured div.listing-card figcaption li.sublist-item {
+    font-size: 0.75rem;
+    opacity: 0.85;
+  }
+  main section.featured div.listing-card figcaption div {
+    justify-content: space-around;
+    margin: 20px 0px;
+  }
+  main section.featured div.listing-card figcaption div ul li i {
+    width: 20px;
+  }
+  main section.featured div.listing-card figcaption button.button {
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */
