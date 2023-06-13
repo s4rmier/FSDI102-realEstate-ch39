@@ -79,9 +79,26 @@ body {
     background-color: rgba($color: #2d3142, $alpha: 0.75);
     backdrop-filter: blur(20px);
   }
+
+  button.button {
+    padding: 0.35rem 0.5rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-family: var(--font-montserrat);
+    color: #fecb54;
+    font-weight: 500;
+    background-color: #003554;
+    border-color: transparent;
+    cursor: pointer;
+  }
+
+  button:hover {
+    filter: drop-shadow(2px 2px 0px var(--hl-col));
+  }
 }
 
-// Universal styling
+// Universal styling / styles both desktop and mobile
 
 nav {
   padding: 1rem;
@@ -235,6 +252,11 @@ div.backtotopbutton {
               font-weight: 500;
               font-size: 2rem;
             }
+
+            li {
+              opacity: 0.5;
+              font-size: 0.85rem;
+            }
           }
         }
 
@@ -256,30 +278,13 @@ div.backtotopbutton {
           p {
             margin: 20px 0px;
           }
-
-          button.button {
-            padding: 0.35rem 0.5rem;
-            justify-self: flex-end;
-            align-self: flex-end;
-            text-transform: uppercase;
-            font-family: var(--font-montserrat);
-            color: #fecb54;
-            font-weight: 500;
-            background-color: #003554;
-            border-color: transparent;
-            cursor: pointer;
-          }
-
-          button:hover {
-            filter: drop-shadow(2px 2px 0px var(--hl-col));
-          }
         }
       }
     }
   }
 }
 
-// Mobile
+// Mobile styling
 @media screen and (max-width: 719px) {
   nav {
     ul.desktop {
@@ -322,17 +327,58 @@ div.backtotopbutton {
             }
           }
         }
+
+        div.listing-detail {
+          background-color: #f0f7ee;
+          padding: 30px;
+          h3 {
+            margin-bottom: 10px;
+          }
+          div {
+            ul {
+              width: 50%;
+            }
+          }
+        }
       }
 
-      div.listing-detail {
-        background-color: #f0f7ee;
-        padding: 30px;
-        h3 {
-          margin-bottom: 10px;
-        }
-        div {
-          ul {
+      div.listing-card {
+        margin: 20px 0px;
+        width: 100%;
+        flex-direction: column;
+        figure {
+          margin: 20px 0px;
+          min-height: 20px;
+          background-color: #f0f7ee;
+          img {
             width: 50%;
+            object-fit: cover;
+          }
+          figcaption {
+            width: 50%;
+            padding: 30px;
+            font-family: var(--font-golos);
+            line-height: 1.5;
+            li.sublist-item {
+              font-size: 0.75rem;
+              opacity: 0.85;
+            }
+
+            div {
+              justify-content: space-between;
+              margin: 20px 0px;
+              ul {
+                li {
+                  i {
+                    width: 30px;
+                  }
+                }
+              }
+            }
+            button.button {
+              align-self: flex-end;
+              justify-self: flex-end;
+            }
           }
         }
       }
@@ -340,7 +386,7 @@ div.backtotopbutton {
   }
 }
 
-// Desktop
+// Desktop styling
 @media screen and (min-width: 720px) {
   nav {
     div.container {
@@ -385,7 +431,7 @@ div.backtotopbutton {
         flex-direction: row;
         div.listing-title {
           margin-top: 20px;
-          height: 400px;
+          // height: 400px;
           width: 60%;
           ul {
             li {
@@ -394,19 +440,19 @@ div.backtotopbutton {
             }
           }
         }
-      }
 
-      div.listing-detail {
-        background-color: #f0f7ee;
-        margin-top: 20px;
-        width: 40%;
-        padding: 40px;
-        h3 {
-          margin-bottom: 10px;
-        }
-        div {
-          ul {
-            width: 50%;
+        div.listing-detail {
+          background-color: #f0f7ee;
+          margin-top: 20px;
+          width: 40%;
+          padding: 40px;
+          h3 {
+            margin-bottom: 10px;
+          }
+          div {
+            ul {
+              width: 50%;
+            }
           }
         }
       }
