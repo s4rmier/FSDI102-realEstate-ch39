@@ -55,6 +55,7 @@ body .justify {
 }
 body .container {
   width: 90%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 body .glassbg {
@@ -123,7 +124,7 @@ nav div.container div h2 {
   margin: 40px 0px;
 }
 #bindex header div hr {
-  width: 140px;
+  width: 90px;
   margin: 0px 10px;
   height: 1px;
   background-color: var(--hl-col);
@@ -137,6 +138,10 @@ div.backtotopbutton {
   position: fixed;
   bottom: 2rem;
   right: 1rem;
+  z-index: 9;
+  padding: 1px;
+  background-color: #f0f7ee;
+  border-radius: 50%;
 }
 div.backtotopbutton i {
   font-size: 2rem;
@@ -387,7 +392,7 @@ div.backtotopbutton i {
     margin: 20px 0px;
   }
   main section.featured div.listing-card figcaption div ul li i {
-    width: 20px;
+    width: 40px;
   }
   main section.featured div.listing-card figcaption button.button {
     align-self: flex-end;
