@@ -54,7 +54,7 @@ body .justify {
   justify-content: center;
 }
 body .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 body .glassbg {
@@ -265,6 +265,7 @@ div.backtotopbutton i {
     margin-bottom: 10px;
   }
   main section.featured div.listing-item div.listing-detail div ul {
+    margin-right: 10px;
     width: 50%;
   }
   main section.featured div.listing-card {
@@ -293,6 +294,7 @@ div.backtotopbutton i {
   main section.featured div.listing-card figure figcaption div {
     justify-content: space-between;
     margin: 20px 0px;
+    flex-direction: column;
   }
   main section.featured div.listing-card figure figcaption div ul li i {
     width: 30px;
@@ -381,7 +383,7 @@ div.backtotopbutton i {
     opacity: 0.85;
   }
   main section.featured div.listing-card figcaption div {
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 20px 0px;
   }
   main section.featured div.listing-card figcaption div ul li i {
