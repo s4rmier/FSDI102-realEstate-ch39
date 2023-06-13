@@ -5,6 +5,7 @@
   margin: 0;
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+  transition: all 100ms ease-in;
   --font-barlow: "Barlow Condensed", sans-serif;
   --font-golos: "Golos Text", sans-serif;
   --font-josefin: "Josefin Sans", sans-serif;
@@ -204,12 +205,27 @@ div.backtotopbutton i {
 #bindex main section.featured div.listing-item div.listing-detail p {
   margin: 20px 0px;
 }
+#bindex main section.featured div.listing-item div.listing-detail button.button {
+  padding: 0.35rem 0.5rem;
+  justify-self: flex-end;
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-family: var(--font-montserrat);
+  color: #fecb54;
+  font-weight: 500;
+  background-color: #003554;
+  border-color: transparent;
+  cursor: pointer;
+}
+#bindex main section.featured div.listing-item div.listing-detail button:hover {
+  filter: drop-shadow(2px 2px 0px var(--hl-col));
+}
 
 @media screen and (max-width: 719px) {
-  div.container nav ul.desktop {
+  nav ul.desktop {
     display: none;
   }
-  div.container nav i {
+  nav i {
     color: var(--hl-col);
     font-size: 1.75rem;
   }

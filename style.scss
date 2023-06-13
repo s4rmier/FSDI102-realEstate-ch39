@@ -8,6 +8,7 @@
   margin: 0;
   font-family: var(--font-primary);
   scroll-behavior: smooth;
+  transition: all 100ms ease-in;
 
   // font style
   --font-barlow: "Barlow Condensed", sans-serif;
@@ -255,6 +256,23 @@ div.backtotopbutton {
           p {
             margin: 20px 0px;
           }
+
+          button.button {
+            padding: 0.35rem 0.5rem;
+            justify-self: flex-end;
+            align-self: flex-end;
+            text-transform: uppercase;
+            font-family: var(--font-montserrat);
+            color: #fecb54;
+            font-weight: 500;
+            background-color: #003554;
+            border-color: transparent;
+            cursor: pointer;
+          }
+
+          button:hover {
+            filter: drop-shadow(2px 2px 0px var(--hl-col));
+          }
         }
       }
     }
@@ -263,15 +281,13 @@ div.backtotopbutton {
 
 // Mobile
 @media screen and (max-width: 719px) {
-  div.container {
-    nav {
-      ul.desktop {
-        display: none;
-      }
-      i {
-        color: var(--hl-col);
-        font-size: 1.75rem;
-      }
+  nav {
+    ul.desktop {
+      display: none;
+    }
+    i {
+      color: var(--hl-col);
+      font-size: 1.75rem;
     }
   }
 
