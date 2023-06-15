@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restate | Home</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c7dcac8717.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="bcontact">
+    <nav class="flex align glassbg">
+      <div class="container flex align">
+        <div>
+          <a href="index.html" class="flex row align"
+            ><img src="img/logo.png" alt="" />
+            <h2>restate</h2></a
+          >
+        </div>
+        <ul class="desktop flex row align">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Contact</h1>
+    </header>
+
+    <main>
+      <fieldset class="flex col container">
+        <legend>Personal Info</legend>
+        <div class="input-control flex col">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="nameinput"
+            placeholder="Type your name"
+          />
+        </div>
+
+        <div class="input-control flex col">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="emailinput"
+            placeholder="Type your e-mail"
+          />
+        </div>
+
+        <div class="input-control flex col">
+          <label for="name">Phone:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phoneinput"
+            placeholder="Enter your phone #"
+          />
+        </div>
+
+        <div class="input-control flex col">
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="messagebox"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="flex col container">
+        <legend>Product Info</legend>
+        <div class="input-control flex col">
+          <label for="model-select">Model:</label>
+          <select name="model-select" id="modelselect">
+            <option value="palazzo">Palazzo</option>
+            <option value="palazzo">Ladera</option>
+            <option value="palazzo">Montecito</option>
+            <option value="palazzo">Ventana</option>
+          </select>
+        </div>
+
+        <div class="input-control flex col">
+          <label for="number">Number:</label>
+          <input
+            type="text"
+            name="numberinput"
+            id="numberinput"
+            placeholder="Enter the unit number"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset class="flex col container radio">
+        <legend>Contact Info</legend>
+        <label for="">Preferred Contact Method</label>
+        <div class="input-control flex row">
+          <div class="flex row">
+            <input type="radio" id="phone" name="contact" value="phone" />
+            <label for="phone">Phone</label>
+          </div>
+          <br />
+          <div class="flex row">
+            <input type="radio" id="email" name="contact" value="email" />
+            <label for="email">Email</label>
+          </div>
+        </div>
+
+        <label for="">Preferred Schedule </label>
+        <div class="input-control flex row">
+          <input type="date" />
+        </div>
+        <div class="input-control flex row">
+          <input type="time" />
+        </div>
+
+        <button class="button">Submit</button>
+      </fieldset>
+    </main>
+
+    <section class="FAQ flex col align justify">
+      <ul class="container">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <li>
+          1. What defines a luxury property in the real estate market?
+          <span>answer</span>
+          <p>
+            A luxury property is known for high-end features, craftsmanship,
+            premium finishes, spacious layouts, and prestigious locations.
+          </p>
+        </li>
+        <li>
+          2. How is the pricing of luxury properties determined?
+          <p class="hidden">
+            Pricing considers location, size, materials, market conditions, and
+            neighborhood reputation to determine luxury property prices.
+          </p>
+        </li>
+        <li>
+          3. Are luxury homes equipped with advanced security systems?
+          <p class="hidden">
+            Luxury homes prioritize safety with advanced security systems
+            including cameras, access control, motion detectors, and smart home
+            technology.
+          </p>
+        </li>
+        <li>
+          4. What amenities can I expect in a luxury property?
+          <p class="hidden">
+            Luxury properties offer amenities like pools, spas, theaters, wine
+            cellars, fitness centers, smart home systems, and landscaped
+            gardens.
+          </p>
+        </li>
+        <li>
+          5. How can I find luxury properties in specific locations or
+          neighborhoods?
+          <p class="hidden">
+            Use our website's search function to find luxury properties in
+            specific locations or neighborhoods, filtering by amenities and
+            price.
+          </p>
+        </li>
+        <li>
+          6. What are the benefits of investing in luxury real estate?
+          <p class="hidden">
+            Benefits of luxury real estate include potential high returns,
+            affluent tenants/buyers, a prestigious lifestyle, and access to
+            upscale amenities.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="backtotopbutton">
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

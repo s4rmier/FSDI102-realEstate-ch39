@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restate | Home</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c7dcac8717.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="bcontact">
+    <nav class="flex align glassbg">
+      <div class="container flex align">
+        <div>
+          <a href="index.html" class="flex row align"
+            ><img src="img/logo.png" alt="" />
+            <h2>restate</h2></a
+          >
+        </div>
+        <ul class="desktop flex row align">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+
+    <main>
+      <h2>Contact</h2>
+      <fieldset class="flex col">
+        <legend>Personal Information</legend>
+        <div class="input-control">
+          <label for="name">Name</label>
+          <input type="text" placeholder="Type your name" />
+        </div>
+
+        <div class="input-control">
+          <label for="name">Email:</label>
+          <input type="text" placeholder="Type your e-mail" />
+        </div>
+
+        <div class="input-control">
+          <label for="name">Phone:</label>
+          <input type="tel" placeholder="Type your e-mail" />
+        </div>
+
+        <div class="input-control">
+          <label for="name">Message:</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="flex col">
+        <legend>Product Information</legend>
+        <div class="input-control">
+          <label for="selection">Type: </label>
+          <select name="selection" id="">
+            <option value="">Penthouse</option>
+            <option value="">House</option>
+            <option value="">Condo</option>
+          </select>
+        </div>
+
+        <div class="input-control">
+          <label for="name">Number:</label>
+          <input type="text" placeholder="" />
+        </div>
+      </fieldset>
+      <fieldset class="flex col">
+        <legend>Contact Information</legend>
+        <div class="flex radio">
+          <input
+            type="radio"
+            id="contactChoice2"
+            name="contact"
+            value="phone"
+          />
+          <label for="contactChoice2">Phone</label>
+
+          <input
+            type="radio"
+            id="contactChoice1"
+            name="contact"
+            value="email"
+          />
+          <label for="contactChoice1">Email</label>
+        </div>
+        <button>Submit</button>
+      </fieldset>
+    </main>
+
+    <footer>
+      <div class="backtotopbutton">
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- 
+#bcontact {
+  main {
+    * {
+      font-family: var(--font-roboto);
+      font-size: 0.85rem;
+      font-weight: 400;
+    }
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 90%;
+    padding: 10px;
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    fieldset {
+      width: 600px;
+      padding: 20px;
+      legend {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      div {
+        margin: 0.5rem;
+        width: 100%;
+        label {
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+
+        input[type="text"],
+        textarea {
+          width: 96%;
+          background-color: rgba($color: #6d8a96, $alpha: 0.25);
+          border: 1px solid #003554;
+          resize: none;
+          padding: 6px;
+          margin: 6px 0px;
+        }
+      }
+      button {
+        background-color: rgba($color: #003554, $alpha: 1);
+        color: #fecb54;
+        padding: 4px 6px;
+        width: 100px;
+        align-self: flex-end;
+        margin: 0px 10px 10px;
+        text-transform: uppercase;
+      }
+
+      div.radio {
+        input {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}
+ -->
