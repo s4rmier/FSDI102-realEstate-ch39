@@ -34,154 +34,161 @@
     </header>
 
     <main>
-      <fieldset class="flex col container">
-        <legend>Personal Info</legend>
-        <div class="input-control flex col">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="nameinput"
-            placeholder="Type your name"
-          />
-        </div>
-
-        <div class="input-control flex col">
-          <label for="email">Email:</label>
-          <input
-            type="text"
-            name="email"
-            id="emailinput"
-            placeholder="Type your e-mail"
-          />
-        </div>
-
-        <div class="input-control flex col">
-          <label for="name">Phone:</label>
-          <input
-            type="tel"
-            name="phone"
-            id="phoneinput"
-            placeholder="Enter your phone #"
-          />
-        </div>
-
-        <div class="input-control flex col">
-          <label for="message">Message:</label>
-          <textarea
-            name="message"
-            id="messagebox"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-      </fieldset>
-
-      <fieldset class="flex col container">
-        <legend>Product Info</legend>
-        <div class="input-control flex col">
-          <label for="model-select">Model:</label>
-          <select name="model-select" id="modelselect">
-            <option value="palazzo">Palazzo</option>
-            <option value="palazzo">Ladera</option>
-            <option value="palazzo">Montecito</option>
-            <option value="palazzo">Ventana</option>
-          </select>
-        </div>
-
-        <div class="input-control flex col">
-          <label for="number">Number:</label>
-          <input
-            type="text"
-            name="numberinput"
-            id="numberinput"
-            placeholder="Enter the unit number"
-          />
-        </div>
-      </fieldset>
-
-      <fieldset class="flex col container radio">
-        <legend>Contact Info</legend>
-        <label for="">Preferred Contact Method</label>
-        <div class="input-control flex row align">
-          <div class="flex row">
-            <input type="radio" id="phone" name="contact" value="phone" />
-            <label for="phone">Phone</label>
+      <div class="contactform flex col align">
+        <fieldset class="flex col">
+          <legend>Personal Info</legend>
+          <div class="input-control flex col">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="nameinput"
+              placeholder="Type your name"
+            />
           </div>
-          <br />
-          <div class="flex row">
-            <input type="radio" id="email" name="contact" value="email" />
-            <label for="email">Email</label>
+
+          <div class="input-control flex col">
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              name="email"
+              id="emailinput"
+              placeholder="Type your e-mail"
+            />
           </div>
-        </div>
 
-        <label for="">Preferred Date: </label>
-        <div class="input-control flex row">
-          <input type="date" />
-        </div>
+          <div class="input-control flex col">
+            <label for="name">Phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phoneinput"
+              placeholder="Enter your phone #"
+            />
+          </div>
 
-        <label for="">Preferred Time: </label>
-        <div class="input-control flex row">
-          <input type="time" />
-        </div>
+          <div class="input-control flex col">
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="messagebox"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </fieldset>
 
-        <button class="button">Submit</button>
-      </fieldset>
+        <fieldset class="flex col">
+          <legend>Product Info</legend>
+          <div class="input-control flex col">
+            <label for="model-select">Model:</label>
+            <select name="model-select" id="modelselect">
+              <option value="palazzo">Palazzo</option>
+              <option value="palazzo">Ladera</option>
+              <option value="palazzo">Montecito</option>
+              <option value="palazzo">Ventana</option>
+            </select>
+          </div>
+
+          <div class="input-control flex col">
+            <label for="number">Number:</label>
+            <input
+              type="text"
+              name="numberinput"
+              id="numberinput"
+              placeholder="Enter the unit number"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset class="flex col radio">
+          <legend>Contact Info</legend>
+          <label for="">Preferred Contact Method</label>
+          <div class="input-control flex row align">
+            <div class="flex row">
+              <input type="radio" id="phone" name="contact" value="phone" />
+              <label for="phone">Phone</label>
+            </div>
+            <br />
+            <div class="flex row">
+              <input type="radio" id="email" name="contact" value="email" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <label for="">Preferred Date: </label>
+          <div class="input-control flex row">
+            <input type="date" />
+          </div>
+
+          <label for="">Preferred Time: </label>
+          <div class="input-control flex row">
+            <input type="time" />
+          </div>
+
+          <button class="button">Submit</button>
+        </fieldset>
+      </div>
+
+      <section class="FAQ col align justify">
+        <ul class="justify">
+          <h2>Frequently Asked Questions (FAQ)</h2>
+          <li>
+            1. What defines a luxury property in the real estate market?
+            <!-- <span>answer</span> -->
+            <p>
+              A luxury property is known for high-end features, craftsmanship,
+              premium finishes, spacious layouts, and prestigious locations.
+            </p>
+          </li>
+          <li>
+            2. How is the pricing of luxury properties determined?
+            <!-- <span class="faq-switch">answer</span> -->
+            <p class="hidden">
+              Pricing considers location, size, materials, market conditions,
+              and neighborhood reputation to determine luxury property prices.
+            </p>
+          </li>
+          <li>
+            3. Are luxury homes equipped with advanced security systems?
+            <!-- <span class="faq-switch">answer</span> -->
+            <p class="hidden">
+              Luxury homes prioritize safety with advanced security systems
+              including cameras, access control, motion detectors, and smart
+              home technology.
+            </p>
+          </li>
+          <li>
+            4. What amenities can I expect in a luxury property?
+            <!-- <span class="faq-switch">answer</span> -->
+            <p class="hidden">
+              Luxury properties offer amenities like pools, spas, theaters, wine
+              cellars, fitness centers, smart home systems, and landscaped
+              gardens.
+            </p>
+          </li>
+          <li>
+            5. How can I find luxury properties in specific locations or
+            neighborhoods?
+            <!-- <span class="faq-switch">answer</span> -->
+            <p class="hidden">
+              Use our website's search function to find luxury properties in
+              specific locations or neighborhoods, filtering by amenities and
+              price.
+            </p>
+          </li>
+          <li>
+            6. What are the benefits of investing in luxury real estate?
+            <!-- <span class="faq-switch">answer</span> -->
+            <p class="hidden">
+              Benefits of luxury real estate include potential high returns,
+              affluent tenants/buyers, a prestigious lifestyle, and access to
+              upscale amenities.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
-
-    <section class="FAQ flex col align justify">
-      <ul class="container">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <li>
-          1. What defines a luxury property in the real estate market?
-          <span>answer</span>
-          <p>
-            A luxury property is known for high-end features, craftsmanship,
-            premium finishes, spacious layouts, and prestigious locations.
-          </p>
-        </li>
-        <li>
-          2. How is the pricing of luxury properties determined?
-          <p class="hidden">
-            Pricing considers location, size, materials, market conditions, and
-            neighborhood reputation to determine luxury property prices.
-          </p>
-        </li>
-        <li>
-          3. Are luxury homes equipped with advanced security systems?
-          <p class="hidden">
-            Luxury homes prioritize safety with advanced security systems
-            including cameras, access control, motion detectors, and smart home
-            technology.
-          </p>
-        </li>
-        <li>
-          4. What amenities can I expect in a luxury property?
-          <p class="hidden">
-            Luxury properties offer amenities like pools, spas, theaters, wine
-            cellars, fitness centers, smart home systems, and landscaped
-            gardens.
-          </p>
-        </li>
-        <li>
-          5. How can I find luxury properties in specific locations or
-          neighborhoods?
-          <p class="hidden">
-            Use our website's search function to find luxury properties in
-            specific locations or neighborhoods, filtering by amenities and
-            price.
-          </p>
-        </li>
-        <li>
-          6. What are the benefits of investing in luxury real estate?
-          <p class="hidden">
-            Benefits of luxury real estate include potential high returns,
-            affluent tenants/buyers, a prestigious lifestyle, and access to
-            upscale amenities.
-          </p>
-        </li>
-      </ul>
-    </section>
 
     <footer>
       <div class="backtotopbutton">

@@ -63,9 +63,6 @@ body .glassbg {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
-body .hidden {
-  display: none;
-}
 body .block {
   display: block;
 }
@@ -328,10 +325,8 @@ div.backtotopbutton i {
     display: grid;
     place-content: center;
   }
-  #bcontact main {
-    padding: 20px;
-  }
   #bcontact main fieldset {
+    width: 80%;
     padding: 5px 20px 10px;
     background-color: whitesmoke;
   }
@@ -373,6 +368,7 @@ div.backtotopbutton i {
     scale: 1;
   }
   #bcontact section.FAQ {
+    margin: 20px 0px 0px;
     background-color: #f0f7ee;
     padding: 20px 10px;
   }
@@ -380,28 +376,24 @@ div.backtotopbutton i {
     font-family: var(--font-golos);
     text-align: center;
   }
-  #bcontact section.FAQ ul,
-  #bcontact section.FAQ h2 {
+  #bcontact section.FAQ ul {
+    padding: 0px 20px;
     margin: 0px 0px 20px;
   }
-  #bcontact section.FAQ ul li,
-  #bcontact section.FAQ h2 li {
+  #bcontact section.FAQ ul li {
     font-size: 1.25rem;
     font-family: var(--font-roboto);
     margin: 16px 0px;
   }
-  #bcontact section.FAQ ul li span,
-  #bcontact section.FAQ h2 li span {
+  #bcontact section.FAQ ul li span {
     text-decoration: underline;
     text-align: right;
     color: var(--link-col);
     font-family: var(--font-merriweather);
     font-size: 65%;
-    font-style: italic;
     font-weight: 600;
   }
-  #bcontact section.FAQ ul li p,
-  #bcontact section.FAQ h2 li p {
+  #bcontact section.FAQ ul li p {
     font-size: 1rem;
     padding: 10px;
   }
@@ -494,5 +486,110 @@ div.backtotopbutton i {
   #bindex main section.featured div.listing-card figcaption button.button {
     align-self: flex-end;
     justify-self: flex-end;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  #bcontact {
+    background: url(img/encuentra.jpg);
+  }
+  #bcontact header {
+    margin: 90px 0px 20px;
+    display: grid;
+    place-content: center;
+  }
+  #bcontact header h1 {
+    font-family: var(--font-golos);
+    text-align: center;
+    color: #fecb54;
+    text-transform: uppercase;
+  }
+  #bcontact main {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #bcontact main div.contactform {
+    width: 50%;
+    height: 100%;
+  }
+  #bcontact main div.contactform fieldset {
+    padding: 5px 20px 10px;
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  #bcontact main div.contactform fieldset legend,
+  #bcontact main div.contactform fieldset label,
+  #bcontact main div.contactform fieldset input,
+  #bcontact main div.contactform fieldset option,
+  #bcontact main div.contactform fieldset select,
+  #bcontact main div.contactform fieldset textarea {
+    font-family: var(--font-manrope);
+    background-color: rgba(240, 247, 238, 0.5);
+  }
+  #bcontact main div.contactform fieldset legend {
+    background-color: transparent;
+  }
+  #bcontact main div.contactform fieldset label,
+  #bcontact main div.contactform fieldset legend {
+    font-weight: 600;
+    margin: 6px 4px;
+  }
+  #bcontact main div.contactform fieldset div.input-control {
+    margin: 0.25rem 0rem;
+  }
+  #bcontact main div.contactform fieldset div.input-control input,
+  #bcontact main div.contactform fieldset div.input-control textarea,
+  #bcontact main div.contactform fieldset div.input-control select {
+    width: 100%;
+    padding: 0.25rem;
+    resize: none;
+    border: 1px solid #003554;
+  }
+  #bcontact main div.contactform fieldset button.button {
+    margin: 20px 0px 10px;
+  }
+  #bcontact main div.contactform fieldset fieldset.radio div.input-control div {
+    margin: 0px 10px;
+  }
+  #bcontact main div.contactform fieldset fieldset.radio div.input-control div input[type=radio] {
+    scale: 1;
+  }
+  #bcontact main section.FAQ {
+    width: 50%;
+    height: 100%;
+    background-color: #f0f7ee;
+    padding: 20px 20px 52px;
+    margin: 10px 40px 10px;
+  }
+  #bcontact main section.FAQ h2 {
+    font-family: var(--font-golos);
+    text-align: center;
+  }
+  #bcontact main section.FAQ ul,
+  #bcontact main section.FAQ h2 {
+    margin: 0px 0px 20px;
+  }
+  #bcontact main section.FAQ ul li,
+  #bcontact main section.FAQ h2 li {
+    font-size: 1.25rem;
+    font-family: var(--font-roboto);
+    margin: 16px 0px;
+  }
+  #bcontact main section.FAQ ul li span,
+  #bcontact main section.FAQ h2 li span {
+    text-decoration: underline;
+    text-align: right;
+    color: var(--link-col);
+    font-family: var(--font-merriweather);
+    font-size: 65%;
+    font-weight: 600;
+  }
+  #bcontact main section.FAQ ul li p,
+  #bcontact main section.FAQ h2 li p {
+    font-size: 1rem;
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

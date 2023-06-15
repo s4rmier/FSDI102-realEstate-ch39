@@ -81,9 +81,9 @@ body {
     backdrop-filter: blur(20px);
   }
 
-  .hidden {
-    display: none;
-  }
+  // .hidden {
+  //   display: none;
+  // }
 
   .block {
     display: block;
@@ -418,9 +418,8 @@ div.backtotopbutton {
     }
 
     main {
-      padding: 20px;
-
       fieldset {
+        width: 80%;
         padding: 5px 20px 10px;
         background-color: whitesmoke;
 
@@ -474,6 +473,7 @@ div.backtotopbutton {
     }
 
     section.FAQ {
+      margin: 20px 0px 0px;
       background-color: #f0f7ee;
       padding: 20px 10px;
       h2 {
@@ -481,8 +481,8 @@ div.backtotopbutton {
         text-align: center;
       }
 
-      ul,
-      h2 {
+      ul {
+        padding: 0px 20px;
         margin: 0px 0px 20px;
         li {
           font-size: 1.25rem;
@@ -494,7 +494,6 @@ div.backtotopbutton {
             color: var(--link-col);
             font-family: var(--font-merriweather);
             font-size: 65%;
-            font-style: italic;
             font-weight: 600;
           }
           p {
@@ -618,6 +617,124 @@ div.backtotopbutton {
             button.button {
               align-self: flex-end;
               justify-self: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #bcontact {
+    background: url(img/encuentra.jpg);
+
+    header {
+      margin: 90px 0px 20px;
+      display: grid;
+      place-content: center;
+      h1 {
+        font-family: var(--font-golos);
+        text-align: center;
+        color: #fecb54;
+        text-transform: uppercase;
+      }
+    }
+
+    main {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+
+      div.contactform {
+        width: 50%;
+        height: 100%;
+        fieldset {
+          padding: 5px 20px 10px;
+          background-color: whitesmoke;
+          width: 100%;
+
+          legend,
+          label,
+          input,
+          option,
+          select,
+          textarea {
+            font-family: var(--font-manrope);
+            background-color: rgba($color: #f0f7ee, $alpha: 0.5);
+          }
+
+          legend {
+            background-color: transparent;
+          }
+
+          label,
+          legend {
+            font-weight: 600;
+            margin: 6px 4px;
+          }
+
+          div.input-control {
+            margin: 0.25rem 0rem;
+            input,
+            textarea,
+            select {
+              width: 100%;
+              padding: 0.25rem;
+              resize: none;
+              border: 1px solid #003554;
+            }
+          }
+
+          button.button {
+            margin: 20px 0px 10px;
+          }
+          fieldset.radio {
+            div.input-control {
+              div {
+                margin: 0px 10px;
+                input[type="radio"] {
+                  scale: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      section.FAQ {
+        width: 50%;
+        height: 100%;
+        background-color: #f0f7ee;
+        padding: 20px 20px 52px;
+        margin: 10px 40px 10px;
+        h2 {
+          font-family: var(--font-golos);
+          text-align: center;
+        }
+
+        ul,
+        h2 {
+          margin: 0px 0px 20px;
+          li {
+            font-size: 1.25rem;
+            font-family: var(--font-roboto);
+            margin: 16px 0px;
+            span {
+              text-decoration: underline;
+              text-align: right;
+              color: var(--link-col);
+              font-family: var(--font-merriweather);
+              font-size: 65%;
+              font-weight: 600;
+            }
+            p {
+              font-size: 1rem;
+              padding: 10px;
             }
           }
         }
