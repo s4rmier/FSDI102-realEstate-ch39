@@ -181,7 +181,7 @@ div.backtotopbutton i {
   font-family: var(--font-manrope);
 }
 #bindex main section.featured {
-  padding: 20px 0px;
+  padding: 20px 0px 0px;
 }
 #bindex main section.featured h2 {
   font-size: 2rem;
@@ -245,14 +245,9 @@ div.backtotopbutton i {
     font-size: 1.75rem;
   }
   #bindex header {
-    min-height: 60vh;
+    min-height: 50vh;
+    padding-top: 60px;
     background-size: auto;
-  }
-  #bindex section.strip div.container {
-    flex-direction: column;
-  }
-  #bindex section.strip div.container figure i {
-    margin-right: 1.75rem;
   }
   #bindex main section.featured div.listing-item {
     margin-top: 20px;
@@ -310,6 +305,137 @@ div.backtotopbutton i {
   #bindex main section.featured div.listing-card figure figcaption button.button {
     align-self: flex-end;
     justify-self: flex-end;
+  }
+  #bindex section.strip {
+    margin-bottom: 20px;
+  }
+  #bindex section.strip div.container {
+    flex-direction: column;
+  }
+  #bindex section.strip div.container figure i {
+    margin-right: 1.75rem;
+  }
+  #bindex section.strip a {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  #bindex section.blogpreview figure {
+    flex-direction: column;
+  }
+  #bindex section.blogpreview figure img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #bindex section.blogpreview figure figcaption {
+    margin: 10px 0px;
+  }
+  #bindex section.blogpreview figure figcaption h2,
+  #bindex section.blogpreview figure figcaption h3 {
+    font-family: var(--font-merriweather);
+  }
+  #bindex section.blogpreview figure figcaption h2 {
+    margin-top: 10px;
+  }
+  #bindex section.blogpreview figure figcaption h3 {
+    padding: 10px;
+    opacity: 0.5;
+    font-size: 0.85rem;
+  }
+  #bindex section.blogpreview figure figcaption p {
+    margin-top: 10px;
+    border-top: 1px solid var(--link-col);
+    padding-top: 20px;
+  }
+  #bindex section.blogpreview figure figcaption a {
+    align-self: center;
+    margin: 20px auto;
+  }
+  #bindex footer {
+    width: 100%;
+    background-color: #2d3142;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  #bindex footer div.brand-logo {
+    justify-content: center;
+    margin-top: 40px 0px 40px;
+  }
+  #bindex footer div.brand-logo a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #bindex footer div.brand-logo a img {
+    width: 100px;
+    margin: 0px 0px 20px;
+  }
+  #bindex footer div.brand-logo a h2 {
+    color: var(--hl-col);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--font-josefin);
+    letter-spacing: 0.15rem;
+  }
+  #bindex footer div.nav-links {
+    flex-direction: column;
+  }
+  #bindex footer div.nav-links ul.business-info {
+    align-items: flex-start;
+    padding: 0px 10px;
+    margin: 20px 0px;
+  }
+  #bindex footer div.nav-links ul {
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  #bindex footer div.nav-links ul li {
+    font-family: var(--font-montserrat);
+    color: var(--hl-col);
+    margin: 0px 6px;
+    text-align: center;
+  }
+  #bindex footer div.subscribe {
+    color: var(--hl-col);
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  #bindex footer div.subscribe label {
+    text-transform: uppercase;
+  }
+  #bindex footer div.subscribe div {
+    height: 40px;
+    margin: 10px 0px;
+  }
+  #bindex footer div.subscribe div input {
+    width: 240px;
+    padding: 0px 10px;
+  }
+  #bindex footer div.subscribe div button.button {
+    height: 36px;
+    margin: auto 10px;
+    background-color: var(--hl-col);
+    color: #003554;
+  }
+  #bindex footer div.social-media h3 {
+    color: var(--hl-col);
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 0px 20px;
+    margin: 20px 0px;
+  }
+  #bindex footer div.social-media ul {
+    justify-content: center;
+    margin: 0px 0px 20px;
+  }
+  #bindex footer div.social-media ul li i {
+    font-size: 1.5rem;
+    color: var(--hl-col);
+    text-align: center;
+    margin: 0px 10px;
   }
   #bcontact {
     background: url(img/encuentra.jpg);
@@ -415,17 +541,24 @@ div.backtotopbutton i {
     display: none;
   }
   #bindex header {
-    min-height: 60vh;
+    min-height: 40vh;
     background-size: auto;
   }
   #bindex header h2 {
     margin-top: 60px;
+  }
+  #bindex section.strip {
+    flex-direction: column;
   }
   #bindex section.strip figure {
     flex-direction: column;
   }
   #bindex section.strip figure i {
     margin-bottom: 40px;
+  }
+  #bindex section.strip a {
+    align-self: center;
+    margin: 0px 0px 20px;
   }
   #bindex main section.featured div.listing-item {
     flex-direction: row;
@@ -487,15 +620,39 @@ div.backtotopbutton i {
     align-self: flex-end;
     justify-self: flex-end;
   }
-  main {
-    display: flex;
+  #bindex section.blogpreview figure {
+    padding: 20px;
     flex-direction: row;
   }
-  #bcontact {
-    background: url(img/encuentra.jpg);
+  #bindex section.blogpreview figure img {
+    width: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 20px;
+  }
+  #bindex section.blogpreview figure figcaption h2,
+  #bindex section.blogpreview figure figcaption h3 {
+    font-family: var(--font-merriweather);
+  }
+  #bindex section.blogpreview figure figcaption h3 {
+    padding: 10px;
+    opacity: 0.5;
+    font-size: 0.85rem;
+  }
+  #bindex section.blogpreview figure figcaption p {
+    margin-top: 10px;
+    border-top: 1px solid var(--link-col);
+    padding-top: 20px;
+  }
+  #bindex section.blogpreview figure figcaption a {
+    margin: 20px auto;
   }
   #bcontact header {
-    margin: 90px 0px 20px;
+    background: url(img/encuentra.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 20vh;
+    margin-bottom: 20px;
     display: grid;
     place-content: center;
   }
@@ -560,7 +717,9 @@ div.backtotopbutton i {
   #bcontact main section.FAQ {
     width: 50%;
     height: 100%;
-    background-color: #f0f7ee;
+    background-color: rgba(240, 247, 238, 0.85);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
     padding: 20px 20px 52px;
     margin: 10px 40px 10px;
   }
