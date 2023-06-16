@@ -244,6 +244,92 @@ div.backtotopbutton i {
     color: var(--hl-col);
     font-size: 1.75rem;
   }
+  footer {
+    width: 100%;
+    background-color: #2d3142;
+    flex-direction: column;
+    padding: 40px 0px;
+  }
+  footer div.brand-logo {
+    justify-content: center;
+    margin-top: 40px 0px 40px;
+  }
+  footer div.brand-logo a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div.brand-logo a img {
+    width: 100px;
+    margin: 0px 0px 20px;
+  }
+  footer div.brand-logo a h2 {
+    color: var(--hl-col);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--font-josefin);
+    letter-spacing: 0.15rem;
+  }
+  footer div.nav-links {
+    flex-direction: column;
+  }
+  footer div.nav-links ul.business-info {
+    align-items: flex-start;
+    padding: 0px 10px;
+    margin: 20px 0px;
+  }
+  footer div.nav-links ul {
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  footer div.nav-links ul li {
+    font-family: var(--font-montserrat);
+    color: var(--hl-col);
+    margin: 0px 6px;
+    text-align: center;
+  }
+  footer div.subscribe {
+    color: var(--hl-col);
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  footer div.subscribe label {
+    text-transform: uppercase;
+  }
+  footer div.subscribe div {
+    height: 40px;
+    margin: 10px 0px;
+  }
+  footer div.subscribe div input {
+    width: 240px;
+    padding: 0px 10px;
+  }
+  footer div.subscribe div button.button {
+    height: 36px;
+    margin: auto 10px;
+    background-color: var(--hl-col);
+    color: #003554;
+  }
+  footer div.social-media h3 {
+    color: var(--hl-col);
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 0px 20px;
+    margin: 20px 0px;
+  }
+  footer div.social-media ul {
+    justify-content: center;
+    margin: 0px 0px 20px;
+  }
+  footer div.social-media ul li i {
+    font-size: 1.5rem;
+    color: var(--hl-col);
+    text-align: center;
+    margin: 0px 10px;
+  }
   #bindex header {
     min-height: 50vh;
     padding-top: 60px;
@@ -351,92 +437,6 @@ div.backtotopbutton i {
     align-self: center;
     margin: 20px auto;
   }
-  #bindex footer {
-    width: 100%;
-    background-color: #2d3142;
-    flex-direction: column;
-    padding: 40px 0px;
-  }
-  #bindex footer div.brand-logo {
-    justify-content: center;
-    margin-top: 40px 0px 40px;
-  }
-  #bindex footer div.brand-logo a {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  #bindex footer div.brand-logo a img {
-    width: 100px;
-    margin: 0px 0px 20px;
-  }
-  #bindex footer div.brand-logo a h2 {
-    color: var(--hl-col);
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-family: var(--font-josefin);
-    letter-spacing: 0.15rem;
-  }
-  #bindex footer div.nav-links {
-    flex-direction: column;
-  }
-  #bindex footer div.nav-links ul.business-info {
-    align-items: flex-start;
-    padding: 0px 10px;
-    margin: 20px 0px;
-  }
-  #bindex footer div.nav-links ul {
-    justify-content: center;
-    margin: 20px 0px;
-  }
-  #bindex footer div.nav-links ul li {
-    font-family: var(--font-montserrat);
-    color: var(--hl-col);
-    margin: 0px 6px;
-    text-align: center;
-  }
-  #bindex footer div.subscribe {
-    color: var(--hl-col);
-    font-family: var(--font-roboto);
-    font-size: 1rem;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  #bindex footer div.subscribe label {
-    text-transform: uppercase;
-  }
-  #bindex footer div.subscribe div {
-    height: 40px;
-    margin: 10px 0px;
-  }
-  #bindex footer div.subscribe div input {
-    width: 240px;
-    padding: 0px 10px;
-  }
-  #bindex footer div.subscribe div button.button {
-    height: 36px;
-    margin: auto 10px;
-    background-color: var(--hl-col);
-    color: #003554;
-  }
-  #bindex footer div.social-media h3 {
-    color: var(--hl-col);
-    font-family: var(--font-montserrat);
-    font-weight: 400;
-    font-size: 0.75rem;
-    padding: 0px 20px;
-    margin: 20px 0px;
-  }
-  #bindex footer div.social-media ul {
-    justify-content: center;
-    margin: 0px 0px 20px;
-  }
-  #bindex footer div.social-media ul li i {
-    font-size: 1.5rem;
-    color: var(--hl-col);
-    text-align: center;
-    margin: 0px 10px;
-  }
   #bcontact {
     background: url(img/encuentra.jpg);
   }
@@ -523,6 +523,64 @@ div.backtotopbutton i {
     font-size: 1rem;
     padding: 10px;
   }
+  #babout h2 {
+    font-family: var(--font-roboto);
+  }
+  #babout header {
+    min-height: 70vh;
+    background: url(img/us2.jpg) no-repeat fixed center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    padding: 20px 40px;
+  }
+  #babout header img {
+    margin: 20px auto;
+    width: 120px;
+  }
+  #babout header h1 {
+    color: var(--hl-col);
+    font-family: var(--font-roboto);
+  }
+  #babout header p {
+    margin: 10px 0px;
+    color: #f0f7ee;
+  }
+  #babout article {
+    padding: 40px;
+  }
+  #babout article p {
+    margin: 10px 0px 10px 6px;
+    padding-left: 10px;
+    border-left: 2px solid #003554;
+  }
+  #babout .article-expertise {
+    background-color: #f0f7ee;
+  }
+  #babout .article-listings {
+    padding: 40px;
+    font-family: var(--font-golos);
+  }
+  #babout .article-listings table {
+    margin: 20px 0px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #babout .article-listings table th,
+  #babout .article-listings table td {
+    border: 1px solid #003554;
+    padding: 4px;
+  }
+  #babout .article-listings table th {
+    text-align: left;
+  }
+  #babout .article-listings table thead tr {
+    text-transform: uppercase;
+    background-color: #fecb54;
+  }
+  #babout .article-listings table tbody tr:nth-child(2n) {
+    background-color: #f0f7ee;
+  }
 }
 @media screen and (min-width: 720px) {
   nav div.container ul.desktop {
@@ -539,6 +597,97 @@ div.backtotopbutton i {
   }
   nav div.container i {
     display: none;
+  }
+  footer {
+    width: 100%;
+    background-color: #2d3142;
+    flex-direction: row;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer div.brand-logo {
+    width: 30%;
+    justify-content: center;
+    margin-top: 40px 0px 40px;
+  }
+  footer div.brand-logo a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div.brand-logo a img {
+    width: 100px;
+    margin: 0px 0px 20px;
+  }
+  footer div.brand-logo a h2 {
+    color: var(--hl-col);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--font-josefin);
+    letter-spacing: 0.15rem;
+  }
+  footer div.nav-links {
+    width: 30%;
+    flex-direction: column;
+  }
+  footer div.nav-links ul.business-info {
+    align-items: flex-start;
+    padding: 0px 10px;
+    margin: 20px 0px;
+  }
+  footer div.nav-links ul {
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  footer div.nav-links ul li {
+    font-family: var(--font-montserrat);
+    color: var(--hl-col);
+    margin: 0px 6px;
+    text-align: center;
+  }
+  footer div.subscribe {
+    width: 30%;
+    color: var(--hl-col);
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  footer div.subscribe label {
+    text-transform: uppercase;
+  }
+  footer div.subscribe div {
+    height: 40px;
+    margin: 10px 0px;
+  }
+  footer div.subscribe div input {
+    width: 240px;
+    padding: 0px 10px;
+  }
+  footer div.subscribe div button.button {
+    height: 36px;
+    margin: auto 10px;
+    background-color: var(--hl-col);
+    color: #003554;
+  }
+  footer div.social-media h3 {
+    color: var(--hl-col);
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 0px 20px;
+    margin: 20px 0px;
+  }
+  footer div.social-media ul {
+    justify-content: center;
+    margin: 0px 0px 20px;
+  }
+  footer div.social-media ul li i {
+    font-size: 1.5rem;
+    color: var(--hl-col);
+    text-align: center;
+    margin: 0px 10px;
   }
   #bindex header {
     min-height: 40vh;
@@ -750,5 +899,70 @@ div.backtotopbutton i {
   #bcontact main section.FAQ h2 li p {
     font-size: 1rem;
     padding: 10px;
+  }
+  #babout h2 {
+    font-family: var(--font-roboto);
+  }
+  #babout header {
+    min-height: 40vh;
+    background: url(img/us2.jpg) no-repeat fixed center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    padding: 20px 40px;
+  }
+  #babout header img {
+    margin: 20px auto;
+    width: 120px;
+  }
+  #babout header h1 {
+    color: var(--hl-col);
+    font-family: var(--font-roboto);
+  }
+  #babout header p {
+    margin: 10px 0px;
+    color: #f0f7ee;
+  }
+  #babout article {
+    padding: 40px;
+  }
+  #babout article div.article-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  #babout article p {
+    margin: 10px 0px 10px 6px;
+    padding-left: 10px;
+    border-left: 2px solid #003554;
+  }
+  #babout .article-expertise {
+    background-color: #f0f7ee;
+  }
+  #babout .article-listings {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-family: var(--font-golos);
+  }
+  #babout .article-listings table {
+    margin: 20px 0px;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+  }
+  #babout .article-listings table th,
+  #babout .article-listings table td {
+    border: 1px solid #003554;
+    padding: 4px;
+  }
+  #babout .article-listings table th {
+    text-align: left;
+  }
+  #babout .article-listings table thead tr {
+    text-transform: uppercase;
+    background-color: #fecb54;
+  }
+  #babout .article-listings table tbody tr:nth-child(2n) {
+    background-color: #f0f7ee;
   }
 }/*# sourceMappingURL=style.css.map */
