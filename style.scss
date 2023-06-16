@@ -80,9 +80,9 @@ body {
     backdrop-filter: blur(20px);
   }
 
-  // .hidden {
-  //   display: none;
-  // }
+  .hide {
+    display: none;
+  }
 
   .block {
     display: block;
@@ -120,6 +120,7 @@ nav {
   transform: translateX(-50%);
   width: 100%;
   z-index: 10;
+  background-color: #2d3142;
 
   div.container {
     justify-content: space-between;
@@ -308,6 +309,96 @@ div.backtotopbutton {
     i {
       color: var(--hl-col);
       font-size: 1.75rem;
+    }
+
+    div.mobile-nav-modal {
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #2d3142;
+      padding: 0px 40px 40px;
+
+      #modal-close {
+        align-self: flex-end;
+        margin: 40px 40px 0px;
+      }
+
+      h1 {
+        color: var(--hl-col);
+        text-transform: uppercase;
+        font-family: var(--font-golos);
+        letter-spacing: 0.15rem;
+      }
+
+      img {
+        margin: 20px 0px;
+        height: 100px;
+      }
+
+      hr {
+        width: 70%;
+        background-color: var(--hl-col);
+        height: 2px;
+      }
+
+      ul {
+        margin: 40px 0px;
+        li {
+          margin: 10px 0px;
+          font-family: var(--font-golos);
+          font-size: 2rem;
+          color: var(--hl-col);
+        }
+      }
+
+      div.nav-subscribe {
+        label {
+          font-family: var(--font-golos);
+          text-transform: uppercase;
+          color: var(--hl-col);
+          margin: 10px 0px;
+        }
+        div {
+          input {
+            font-family: var(--font-golos);
+            width: 200px;
+            padding: 2px 4px;
+            margin: 0px 10px;
+          }
+          button.button {
+            background: var(--hl-col);
+            color: #003554;
+            font-weight: 600;
+          }
+        }
+        div.nav-social-media {
+          padding: 20px;
+          h3 {
+            color: var(--hl-col);
+            font-family: var(--font-montserrat);
+            font-weight: 400;
+            font-size: 0.75rem;
+            padding: 0px 20px;
+            margin: 20px 0px;
+          }
+          ul {
+            justify-content: center;
+            margin: 0px 0px 20px;
+
+            li {
+              i {
+                font-size: 1.5rem;
+                color: var(--hl-col);
+                text-align: center;
+                margin: 0px 10px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -649,6 +740,11 @@ div.backtotopbutton {
       font-family: var(--font-roboto);
     }
 
+    iframe {
+      width: 100%;
+      height: 360px;
+    }
+
     header {
       min-height: 70vh;
       background: url(img/us2.jpg) no-repeat fixed center;
@@ -715,6 +811,69 @@ div.backtotopbutton {
       }
     }
   }
+
+  #bblog {
+    header {
+      margin-top: 56px;
+      figure {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+        figcaption {
+          padding: 20px;
+          h3 {
+            font-family: var(--font-merriweather);
+            padding: 10px;
+            opacity: 0.5;
+            font-size: 0.85rem;
+          }
+          button.button {
+            margin: 20px 0px;
+          }
+        }
+      }
+    }
+
+    main {
+      width: 100%;
+      article {
+        background-color: #f0f7ee;
+        figure {
+          img {
+            width: 100%;
+          }
+          figcaption {
+            padding: 20px;
+            h2 {
+              font-family: var(--font-golos);
+            }
+            p {
+              margin: 10px 0px;
+            }
+            button.button {
+              margin: 10px 0px;
+            }
+          }
+        }
+      }
+
+      div.blog-cards {
+        flex-direction: column;
+        margin: 40px 0px;
+
+        article.blog-item {
+          width: 80%;
+          background-color: transparent;
+          figure {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Desktop styling
@@ -737,6 +896,10 @@ div.backtotopbutton {
         display: none;
       }
     }
+  }
+
+  div.mobile-nav-modal {
+    display: none;
   }
 
   footer {
@@ -1097,6 +1260,14 @@ div.backtotopbutton {
       font-family: var(--font-roboto);
     }
 
+    div.youtube-container {
+      margin: 40px 0px 0px;
+      iframe {
+        width: 90%;
+        height: 600px;
+      }
+    }
+
     header {
       min-height: 40vh;
       background: url(img/us2.jpg) no-repeat fixed center;
@@ -1143,7 +1314,7 @@ div.backtotopbutton {
       display: flex;
       flex-direction: column;
 
-      padding: 40px;
+      padding: 20px 40px 40px;
       font-family: var(--font-golos);
       table {
         margin: 20px 0px;
@@ -1168,6 +1339,92 @@ div.backtotopbutton {
 
         tbody tr:nth-child(2n) {
           background-color: #f0f7ee;
+        }
+      }
+    }
+  }
+
+  #bblog {
+    header {
+      figure {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 90px auto 20px;
+        padding: 10px;
+        img {
+          width: 50%;
+          height: 500px;
+          object-fit: cover;
+        }
+        figcaption {
+          width: 40%;
+          padding: 20px;
+          margin: 0px 20px;
+          h3 {
+            font-family: var(--font-merriweather);
+            padding: 10px;
+            opacity: 0.5;
+            font-size: 0.85rem;
+          }
+          button.button {
+            margin: 20px 0px;
+          }
+        }
+      }
+    }
+
+    main {
+      width: 100%;
+      article {
+        background-color: #f0f7ee;
+        figure {
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row-reverse;
+          img {
+            margin: 20px;
+            margin-left: 0;
+            width: 80%;
+          }
+          figcaption {
+            padding: 20px;
+            h2 {
+              font-family: var(--font-golos);
+            }
+            p {
+              margin: 10px 0px;
+            }
+            button.button {
+              margin: 10px 0px;
+            }
+          }
+        }
+      }
+
+      div.blog-cards {
+        flex-direction: row;
+        margin: 20px 0px 0px;
+        article.blog-item {
+          width: 100%;
+          background-color: transparent;
+          display: flex;
+          flex-direction: column;
+
+          figure {
+            flex-direction: row;
+
+            margin-bottom: 10px;
+            img {
+              width: 50%;
+              height: 240px;
+              object-fit: cover;
+            }
+            figcaption {
+              width: 50%;
+            }
+          }
         }
       }
     }

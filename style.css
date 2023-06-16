@@ -63,6 +63,9 @@ body .glassbg {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
+body .hide {
+  display: none;
+}
 body .block {
   display: block;
 }
@@ -93,6 +96,7 @@ nav {
   transform: translateX(-50%);
   width: 100%;
   z-index: 10;
+  background-color: #2d3142;
 }
 nav div.container {
   justify-content: space-between;
@@ -243,6 +247,82 @@ div.backtotopbutton i {
   nav i {
     color: var(--hl-col);
     font-size: 1.75rem;
+  }
+  nav div.mobile-nav-modal {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2d3142;
+    padding: 0px 40px 40px;
+  }
+  nav div.mobile-nav-modal #modal-close {
+    align-self: flex-end;
+    margin: 40px 40px 0px;
+  }
+  nav div.mobile-nav-modal h1 {
+    color: var(--hl-col);
+    text-transform: uppercase;
+    font-family: var(--font-golos);
+    letter-spacing: 0.15rem;
+  }
+  nav div.mobile-nav-modal img {
+    margin: 20px 0px;
+    height: 100px;
+  }
+  nav div.mobile-nav-modal hr {
+    width: 70%;
+    background-color: var(--hl-col);
+    height: 2px;
+  }
+  nav div.mobile-nav-modal ul {
+    margin: 40px 0px;
+  }
+  nav div.mobile-nav-modal ul li {
+    margin: 10px 0px;
+    font-family: var(--font-golos);
+    font-size: 2rem;
+    color: var(--hl-col);
+  }
+  nav div.mobile-nav-modal div.nav-subscribe label {
+    font-family: var(--font-golos);
+    text-transform: uppercase;
+    color: var(--hl-col);
+    margin: 10px 0px;
+  }
+  nav div.mobile-nav-modal div.nav-subscribe div input {
+    font-family: var(--font-golos);
+    width: 200px;
+    padding: 2px 4px;
+    margin: 0px 10px;
+  }
+  nav div.mobile-nav-modal div.nav-subscribe div button.button {
+    background: var(--hl-col);
+    color: #003554;
+    font-weight: 600;
+  }
+  nav div.mobile-nav-modal div.nav-subscribe div.nav-social-media {
+    padding: 20px;
+  }
+  nav div.mobile-nav-modal div.nav-subscribe div.nav-social-media h3 {
+    color: var(--hl-col);
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 0px 20px;
+    margin: 20px 0px;
+  }
+  nav div.mobile-nav-modal div.nav-subscribe div.nav-social-media ul {
+    justify-content: center;
+    margin: 0px 0px 20px;
+  }
+  nav div.mobile-nav-modal div.nav-subscribe div.nav-social-media ul li i {
+    font-size: 1.5rem;
+    color: var(--hl-col);
+    text-align: center;
+    margin: 0px 10px;
   }
   footer {
     width: 100%;
@@ -526,6 +606,10 @@ div.backtotopbutton i {
   #babout h2 {
     font-family: var(--font-roboto);
   }
+  #babout iframe {
+    width: 100%;
+    height: 360px;
+  }
   #babout header {
     min-height: 70vh;
     background: url(img/us2.jpg) no-repeat fixed center;
@@ -581,6 +665,62 @@ div.backtotopbutton i {
   #babout .article-listings table tbody tr:nth-child(2n) {
     background-color: #f0f7ee;
   }
+  #bblog header {
+    margin-top: 56px;
+  }
+  #bblog header figure {
+    width: 100%;
+  }
+  #bblog header figure img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #bblog header figure figcaption {
+    padding: 20px;
+  }
+  #bblog header figure figcaption h3 {
+    font-family: var(--font-merriweather);
+    padding: 10px;
+    opacity: 0.5;
+    font-size: 0.85rem;
+  }
+  #bblog header figure figcaption button.button {
+    margin: 20px 0px;
+  }
+  #bblog main {
+    width: 100%;
+  }
+  #bblog main article {
+    background-color: #f0f7ee;
+  }
+  #bblog main article figure img {
+    width: 100%;
+  }
+  #bblog main article figure figcaption {
+    padding: 20px;
+  }
+  #bblog main article figure figcaption h2 {
+    font-family: var(--font-golos);
+  }
+  #bblog main article figure figcaption p {
+    margin: 10px 0px;
+  }
+  #bblog main article figure figcaption button.button {
+    margin: 10px 0px;
+  }
+  #bblog main div.blog-cards {
+    flex-direction: column;
+    margin: 40px 0px;
+  }
+  #bblog main div.blog-cards article.blog-item {
+    width: 80%;
+    background-color: transparent;
+  }
+  #bblog main div.blog-cards article.blog-item figure {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 720px) {
   nav div.container ul.desktop {
@@ -596,6 +736,9 @@ div.backtotopbutton i {
     margin: 0px 10px;
   }
   nav div.container i {
+    display: none;
+  }
+  div.mobile-nav-modal {
     display: none;
   }
   footer {
@@ -903,6 +1046,13 @@ div.backtotopbutton i {
   #babout h2 {
     font-family: var(--font-roboto);
   }
+  #babout div.youtube-container {
+    margin: 40px 0px 0px;
+  }
+  #babout div.youtube-container iframe {
+    width: 90%;
+    height: 600px;
+  }
   #babout header {
     min-height: 40vh;
     background: url(img/us2.jpg) no-repeat fixed center;
@@ -941,7 +1091,7 @@ div.backtotopbutton i {
   #babout .article-listings {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px 40px 40px;
     font-family: var(--font-golos);
   }
   #babout .article-listings table {
@@ -964,5 +1114,84 @@ div.backtotopbutton i {
   }
   #babout .article-listings table tbody tr:nth-child(2n) {
     background-color: #f0f7ee;
+  }
+  #bblog header figure {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 90px auto 20px;
+    padding: 10px;
+  }
+  #bblog header figure img {
+    width: 50%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #bblog header figure figcaption {
+    width: 40%;
+    padding: 20px;
+    margin: 0px 20px;
+  }
+  #bblog header figure figcaption h3 {
+    font-family: var(--font-merriweather);
+    padding: 10px;
+    opacity: 0.5;
+    font-size: 0.85rem;
+  }
+  #bblog header figure figcaption button.button {
+    margin: 20px 0px;
+  }
+  #bblog main {
+    width: 100%;
+  }
+  #bblog main article {
+    background-color: #f0f7ee;
+  }
+  #bblog main article figure {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #bblog main article figure img {
+    margin: 20px;
+    margin-left: 0;
+    width: 80%;
+  }
+  #bblog main article figure figcaption {
+    padding: 20px;
+  }
+  #bblog main article figure figcaption h2 {
+    font-family: var(--font-golos);
+  }
+  #bblog main article figure figcaption p {
+    margin: 10px 0px;
+  }
+  #bblog main article figure figcaption button.button {
+    margin: 10px 0px;
+  }
+  #bblog main div.blog-cards {
+    flex-direction: row;
+    margin: 20px 0px 0px;
+  }
+  #bblog main div.blog-cards article.blog-item {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  #bblog main div.blog-cards article.blog-item figure {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  #bblog main div.blog-cards article.blog-item figure img {
+    width: 50%;
+    height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #bblog main div.blog-cards article.blog-item figure figcaption {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
