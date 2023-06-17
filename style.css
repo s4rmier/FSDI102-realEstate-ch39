@@ -240,6 +240,19 @@ div.backtotopbutton i {
   margin: 20px 0px;
 }
 
+div.modal-window {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  padding: 20px;
+  background-color: rgba(45, 49, 66, 0.85);
+}
+div.modal-window div.inner-modal {
+  background-color: #f0f7ee;
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (max-width: 766px) {
   nav ul.desktop {
     display: none;
@@ -415,6 +428,41 @@ div.backtotopbutton i {
     min-height: 50vh;
     padding-top: 60px;
     background-size: auto;
+  }
+  #bindex div.modal-window div.inner-modal {
+    position: relative;
+    isolation: isolate;
+    font-family: var(--font-golos);
+  }
+  #bindex div.modal-window div.inner-modal i#details-modal-close {
+    position: absolute;
+    margin: 20px 20px 10px 0px;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    color: var(--hl-col);
+  }
+  #bindex div.modal-window div.inner-modal img {
+    width: 100%;
+    height: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #bindex div.modal-window div.inner-modal h2,
+  #bindex div.modal-window div.inner-modal h3,
+  #bindex div.modal-window div.inner-modal ul,
+  #bindex div.modal-window div.inner-modal p {
+    margin: 20px 20px 0px;
+  }
+  #bindex div.modal-window div.inner-modal span {
+    margin: 4px 20px;
+    font-size: 0.75rem;
+    opacity: 0.75;
+  }
+  #bindex div.modal-window div.inner-modal div ul li i {
+    width: 2rem;
+  }
+  #bindex i#details-modal-close {
+    cursor: pointer;
   }
   #bindex main section.featured div.listing-item {
     margin-top: 20px;
@@ -839,6 +887,40 @@ div.backtotopbutton i {
   }
   #bindex header h2 {
     margin-top: 60px;
+  }
+  #bindex div.modal-window div.inner-modal {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    isolation: isolate;
+    font-family: var(--font-golos);
+  }
+  #bindex div.modal-window div.inner-modal i#details-modal-close {
+    position: absolute;
+    margin: 20px 20px 10px 0px;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    color: var(--hl-col);
+  }
+  #bindex div.modal-window div.inner-modal img {
+    width: 100%;
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #bindex div.modal-window div.inner-modal h2,
+  #bindex div.modal-window div.inner-modal h3,
+  #bindex div.modal-window div.inner-modal ul,
+  #bindex div.modal-window div.inner-modal p {
+    margin: 20px 20px 0px;
+  }
+  #bindex div.modal-window div.inner-modal span {
+    margin: 4px 20px;
+    font-size: 0.75rem;
+    opacity: 0.75;
+  }
+  #bindex div.modal-window div.inner-modal div ul li i {
+    width: 2rem;
   }
   #bindex section.strip {
     flex-direction: column;

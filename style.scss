@@ -300,6 +300,19 @@ div.backtotopbutton {
   }
 }
 
+div.modal-window {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  padding: 20px;
+  background-color: rgba($color: #2d3142, $alpha: 0.85);
+  div.inner-modal {
+    background-color: #f0f7ee;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 // Mobile styling
 @media screen and (max-width: 766px) {
   nav {
@@ -505,6 +518,53 @@ div.backtotopbutton {
       min-height: 50vh;
       padding-top: 60px;
       background-size: auto;
+    }
+
+    div.modal-window {
+      div.inner-modal {
+        position: relative;
+        isolation: isolate;
+        font-family: var(--font-golos);
+        i#details-modal-close {
+          position: absolute;
+          margin: 20px 20px 10px 0px;
+          align-self: flex-end;
+          font-size: 1.5rem;
+          color: var(--hl-col);
+        }
+        img {
+          width: 100%;
+          height: 40%;
+          object-fit: cover;
+        }
+
+        h2,
+        h3,
+        ul,
+        p {
+          margin: 20px 20px 0px;
+        }
+
+        span {
+          margin: 4px 20px;
+          font-size: 0.75rem;
+          opacity: 0.75;
+        }
+
+        div {
+          ul {
+            li {
+              i {
+                width: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    i#details-modal-close {
+      cursor: pointer;
     }
 
     main {
@@ -1011,6 +1071,51 @@ div.backtotopbutton {
       background-size: auto;
       h2 {
         margin-top: 60px;
+      }
+    }
+
+    div.modal-window {
+      div.inner-modal {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        isolation: isolate;
+        font-family: var(--font-golos);
+        i#details-modal-close {
+          position: absolute;
+          margin: 20px 20px 10px 0px;
+          align-self: flex-end;
+          font-size: 1.5rem;
+          color: var(--hl-col);
+        }
+        img {
+          width: 100%;
+          height: 50%;
+          object-fit: cover;
+        }
+
+        h2,
+        h3,
+        ul,
+        p {
+          margin: 20px 20px 0px;
+        }
+
+        span {
+          margin: 4px 20px;
+          font-size: 0.75rem;
+          opacity: 0.75;
+        }
+
+        div {
+          ul {
+            li {
+              i {
+                width: 2rem;
+              }
+            }
+          }
+        }
       }
     }
 
