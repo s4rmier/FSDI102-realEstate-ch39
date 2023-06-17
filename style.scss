@@ -301,7 +301,7 @@ div.backtotopbutton {
 }
 
 // Mobile styling
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 766px) {
   nav {
     ul.desktop {
       display: none;
@@ -431,7 +431,7 @@ div.backtotopbutton {
     div.nav-links {
       flex-direction: column;
       ul.business-info {
-        align-items: flex-start;
+        align-items: center;
         padding: 0px 10px;
         margin: 20px 0px;
       }
@@ -454,6 +454,7 @@ div.backtotopbutton {
       font-size: 1rem;
       padding: 20px;
       margin-bottom: 40px;
+      align-items: center;
       label {
         text-transform: uppercase;
       }
@@ -877,7 +878,7 @@ div.backtotopbutton {
 }
 
 // Desktop styling
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 767px) {
   nav {
     div.container {
       ul.desktop {
