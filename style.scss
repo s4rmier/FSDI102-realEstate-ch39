@@ -140,35 +140,6 @@ nav {
   }
 }
 
-#bindex header {
-  width: 100%;
-
-  h2 {
-    color: var(--pri-col);
-    font-style: italic;
-    text-align: center;
-    font-size: 2rem;
-    span {
-      color: var(--hl-col);
-      font-size: 3rem;
-      line-height: 1;
-    }
-  }
-  div {
-    margin: 40px 0px;
-    hr {
-      width: 90px;
-      margin: 0px 10px;
-      height: 1px;
-      background-color: var(--hl-col);
-    }
-    i {
-      margin: 0px 5px;
-      color: var(--hl-col);
-    }
-  }
-}
-
 div.backtotopbutton {
   position: fixed;
   bottom: 2rem;
@@ -184,7 +155,46 @@ div.backtotopbutton {
 
 #bindex {
   header {
+    width: 100%;
+
+    h2 {
+      color: var(--pri-col);
+      font-style: italic;
+      text-align: center;
+      font-size: 2rem;
+      span {
+        color: var(--hl-col);
+        font-size: 3rem;
+        line-height: 1;
+      }
+    }
+    div {
+      margin: 40px 0px;
+      hr {
+        width: 90px;
+        margin: 0px 10px;
+        height: 1px;
+        background-color: var(--hl-col);
+      }
+      i {
+        margin: 0px 5px;
+        color: var(--hl-col);
+      }
+    }
     background: url(img/header.jpg) no-repeat center / cover;
+  }
+
+  div.modal-window {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    padding: 20px;
+    background-color: rgba($color: #2d3142, $alpha: 0.85);
+    div.inner-modal {
+      background-color: #f0f7ee;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   section.strip {
@@ -297,19 +307,6 @@ div.backtotopbutton {
         }
       }
     }
-  }
-}
-
-div.modal-window {
-  position: fixed;
-  inset: 0;
-  z-index: 20;
-  padding: 20px;
-  background-color: rgba($color: #2d3142, $alpha: 0.85);
-  div.inner-modal {
-    background-color: #f0f7ee;
-    height: 100%;
-    width: 100%;
   }
 }
 
@@ -529,7 +526,7 @@ div.modal-window {
           position: absolute;
           margin: 20px 20px 10px 0px;
           align-self: flex-end;
-          font-size: 1.5rem;
+          font-size: 1.75rem;
           color: var(--hl-col);
         }
         img {
@@ -1085,7 +1082,7 @@ div.modal-window {
           position: absolute;
           margin: 20px 20px 10px 0px;
           align-self: flex-end;
-          font-size: 1.5rem;
+          font-size: 2rem;
           color: var(--hl-col);
         }
         img {

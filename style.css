@@ -113,8 +113,22 @@ nav div.container div h2 {
   letter-spacing: 0.15rem;
 }
 
+div.backtotopbutton {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 9;
+  padding: 1px;
+  background-color: #f0f7ee;
+  border-radius: 50%;
+}
+div.backtotopbutton i {
+  font-size: 2rem;
+}
+
 #bindex header {
   width: 100%;
+  background: url(img/header.jpg) no-repeat center/cover;
 }
 #bindex header h2 {
   color: var(--pri-col);
@@ -140,22 +154,17 @@ nav div.container div h2 {
   margin: 0px 5px;
   color: var(--hl-col);
 }
-
-div.backtotopbutton {
+#bindex div.modal-window {
   position: fixed;
-  bottom: 2rem;
-  right: 1rem;
-  z-index: 9;
-  padding: 1px;
+  inset: 0;
+  z-index: 20;
+  padding: 20px;
+  background-color: rgba(45, 49, 66, 0.85);
+}
+#bindex div.modal-window div.inner-modal {
   background-color: #f0f7ee;
-  border-radius: 50%;
-}
-div.backtotopbutton i {
-  font-size: 2rem;
-}
-
-#bindex header {
-  background: url(img/header.jpg) no-repeat center/cover;
+  height: 100%;
+  width: 100%;
 }
 #bindex section.strip {
   background: rgb(230, 244, 255);
@@ -238,19 +247,6 @@ div.backtotopbutton i {
 }
 #bindex main section.featured div.listing-item div.listing-detail p {
   margin: 20px 0px;
-}
-
-div.modal-window {
-  position: fixed;
-  inset: 0;
-  z-index: 20;
-  padding: 20px;
-  background-color: rgba(45, 49, 66, 0.85);
-}
-div.modal-window div.inner-modal {
-  background-color: #f0f7ee;
-  height: 100%;
-  width: 100%;
 }
 
 @media screen and (max-width: 766px) {
@@ -438,7 +434,7 @@ div.modal-window div.inner-modal {
     position: absolute;
     margin: 20px 20px 10px 0px;
     align-self: flex-end;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--hl-col);
   }
   #bindex div.modal-window div.inner-modal img {
@@ -899,7 +895,7 @@ div.modal-window div.inner-modal {
     position: absolute;
     margin: 20px 20px 10px 0px;
     align-self: flex-end;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--hl-col);
   }
   #bindex div.modal-window div.inner-modal img {
